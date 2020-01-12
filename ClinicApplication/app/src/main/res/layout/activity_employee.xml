@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EmployeeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvEmployeeTitle"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="..."
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tvEmployeeWork"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="..."
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btnChooseClinic"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Choose Clinic" />
+
+        <Button
+            android:id="@+id/btnEditClinic"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Edit Clinic" />
+
+        <Button
+            android:id="@+id/btnChooseService"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choose Services" />
+
+        <Button
+            android:id="@+id/btnEditEmployee"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:text="Edit Account" />
+
+        <Button
+            android:id="@+id/btnEditWorkingHours"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edit Working Hours" />
+
+        <Button
+            android:id="@+id/mainMenuEmployee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="44dp"
+            android:text="@string/menu" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
