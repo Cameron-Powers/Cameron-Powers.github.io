@@ -1,0 +1,163 @@
+ 
+ 
+ body {
+		background-image:url(../images/bg.jpg)
+	}
+	
+	h1 {
+		text-align: center;
+		font-size: 64px;
+		color: #FFF;
+		font-weight: bold;
+		font-family: Tahoma, Geneva, sans-serif;
+		font-style: italic;
+		padding: 10px;
+	}
+	
+	p {
+		padding-right: 100px;
+		padding-left: 100px;
+		padding-bottom: 50px;
+		color: #FFFFFF;
+		font-size: 24px;
+		line-height: 30px;
+	}
+	
+	label {
+		font-family: "Times New Roman", Times, serif;
+		font-size: 25px;
+		color: #FFF;
+		line-height: 30px;
+		display: inline;
+	}
+	
+	
+	
+	#container1 {
+		width: 750px; 
+		margin-left: auto; 
+		margin-right: auto; 
+		margin-top: 25px;
+		background-color: #0F7795;
+		border: groove 5px #000;	
+	}
+	
+	
+	#container2 {
+		width: 1000px; 
+		margin-left: auto; 
+		margin-right: auto; 
+		margin-top: 25px;
+		background-color: #0F7795;
+		border: groove 5px #000;
+		padding: 10px;
+		text-align:center;
+	}
+	
+	#container3 {
+		width: 1000px; 
+		margin-left: auto; 
+		margin-right: auto; 
+		margin-top: 25px;
+		background-color: #0F7795;
+		border: groove 5px #000;
+		padding: 10px;
+		text-align:center;
+	}
+	
+	#container4 {
+		width: 1000px; 
+		margin-left: auto; 
+		margin-right: auto; 
+		margin-top: 25px;
+		background-color: #0F7795;
+		border: groove 5px #000;
+		padding: 10px;
+		text-align:center;
+	}
+	
+	img {
+		width: 200px;
+	}
+	
+	
+	.hope { 
+		width: 500px;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+	}
+	
+	
+	#button {
+		color: #0F7795;
+		border: thick 5px  #EC1C3A ;
+		font-size: 50px;
+		font-family: Tahoma, Geneva, sans-serif; 
+		border-radius: 15px;
+   		background:  url(../images/bg.jpg);
+    	padding-right: 200px;
+		padding-left: 200px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		font-weight: bold;
+    	}
+		
+	#button:hover {
+   		color: white;
+		border-color: black;
+		}
+		
+	#pa {
+		color: #0F7795;
+		border: thick 5px  #EC1C3A ;
+		font-size: 36px;
+		font-family: Tahoma, Geneva, sans-serif; 
+		border-radius: 15px;
+   		background:  url(../images/again.gif);
+    	padding-left: 130px;
+		padding-right: 150px;
+		padding-top: 60px;
+		padding-bottom: 60px;
+		font-weight: bold;
+    	}
+		
+	#pa:hover {
+   		color: white;
+		border-color: black;
+		}
+		
+	#rule {
+		color: #0F7795;
+		padding: 20px;
+		border: thick 5px #EC1C3A ;
+		font-size: 24px;
+		font-family: Tahoma, Tahoma, Geneva, sans-serif;
+		border-radius: 15px;
+		background: url(../images/bg.jpg);
+		font-weight: bold;
+	}
+	
+	#rule:hover {
+		color: white;
+		border-color: black;
+	}
+		
+		
+	h2 {
+		font-family:Tahoma, Geneva, sans-serif;
+		color: #FFF;
+		font-size: 24px;
+	}
+	
+	.under {
+		text-decoration: underline;
+		font-size: 36px;		
+		font-style: italic;
+	}
+		
+
+	
+	
+ 
+

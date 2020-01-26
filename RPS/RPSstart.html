@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+    <title> Rock, Paper, Scissors </title>
+    <link rel="stylesheet" href="css/browser_reset.css">
+    <link rel="stylesheet" href="css/rps css.css">
+</head>
+
+<script>
+
+var play = document.player.cc.value;
+var comp = 0;
+
+	function YouChoice() {
+		
+		if (document.getElementById('rock').checked) {
+			( play = "Rock")
+		}
+		else if (document.getElementById("paper").checked) {
+			( play = "Paper")
+		} 
+		else if (document.getElementById("scissors").checked) { 
+			( play = "Scissors")
+		}
+		sessionStorage.setItem("storage1",play);
+		
+
+		comp = Math.floor ( Math.random () * ( 4 - 1 ) + 1 )
+			
+		if ( comp == 1 ) { 
+			(comp = "Rock")
+		}
+		else if ( comp == 2 ) {
+			(comp = "Paper")
+		} 
+		else if ( comp == 3 ) { 
+			(comp = "Scissors")
+		}
+	
+	sessionStorage.setItem("storage2",comp);
+	
+	
+			location = "results.html";
+			
+			return false;
+	}
+	
+	function htp() {
+		location = "rules.html"
+	}
+
+
+	
+	
+	
+
+</script>
+
+
+<body>
+    
+<div id="container1">
+<h1> Rock, Paper, Scissors! </h1>
+</div>
+
+
+<div id="container2">
+
+ <form name="player" method="post" onSubmit="return YouChoice()" onReset="return htp()">
+
+
+ 	<label for= "options"> What move to you want to play? </label> <br>
+   <p> <input type="radio" name="cc" id="rock" value="rock"> <img src="images/rock.png" >
+
+    <input type="radio" name="cc" id="paper" value"paper"> <img src="images/paper.png" >
+
+    <input type="radio" name="cc" id="scissors" value="scissors"> <img src="images/scissors.png" ></p>
+
+    <input type="submit" id="button" value="FIGHT"><br>
+
+    <input type="reset" id="rule" value="Rules">
+    
+ </form>
+ 
+ </div>
+ 
+ 
+ 
+
+</body>
+
+
+</html>
