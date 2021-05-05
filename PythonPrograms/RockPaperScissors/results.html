@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+    <title> Rock, Paper, Scissors </title>
+    <link rel="stylesheet" href="css/browser_reset.css">
+    <link rel="stylesheet" href="css/rps css.css">
+</head>
+
+<script>
+
+var play = sessionStorage.getItem("storage1")
+var comp = sessionStorage.getItem("storage2")
+var PointPlayer = sessionStorage.getItem("score1");
+var PointComp = sessionStorage.getItem("score2");
+	
+	
+	function photos() {
+		
+		if ( play == "Paper") {
+		 	document.getElementById("pic").innerHTML = '<img src= "images/paper.png" >'
+		}
+		
+		else if ( play == "Rock") {
+			document.getElementById("pic").innerHTML ='<img src = "images/rock.png" >'
+		}
+		
+		
+		else if ( play == "Scissors") {
+			document.getElementById("pic").innerHTML ='<img src = "images/scissors.png" >'
+		}
+		
+		if ( comp == "Paper") {
+			document.getElementById("picc").innerHTML ='<img src= "images/paper.png">'
+		}
+		else if ( comp == "Rock") {
+			document.getElementById("picc").innerHTML ='<img src = "images/rock.png">'
+		}
+		else if ( comp == "Scissors") {
+			document.getElementById("picc").innerHTML ='<img src = "images/scissors.png">'
+		}
+		compare();
+	}
+	
+	function compare() {
+		if ( comp == play ) {
+			document.getElementById("container3").innerHTML = " You both played the same move!!! Score = Computer: " + PointComp + " You: " + PointPlayer;
+		}	
+		else if ( comp == "Rock" && play == "Paper" ) {
+	 		PointPlayer ++
+			document.getElementById("container3").innerHTML = " Score Updated! "
+			document.getElementById("container3").innerHTML = " Score = Computer: " + PointComp + " You: " + PointPlayer;
+		}
+		else if ( comp == "Paper" && play == "Scissors" ) {
+			 PointPlayer++
+			 document.getElementById("container3").innerHTML = " Score Updated! "
+			 document.getElementById("container3").innerHTML = " Score = Computer: " + PointComp + " You: " + PointPlayer;
+		}
+		else if ( comp == "Scissors" && play == "Rock" ) {
+			  PointPlayer++
+			  document.getElementById("container3").innerHTML = " Score Updated! "
+			  document.getElementById("container3").innerHTML = " Score = Computer: " + PointComp + " You: " + PointPlayer;
+		}
+		else {
+			PointComp++
+			document.getElementById("container3").innerHTML = " Score Updated! "
+			document.getElementById("container3").innerHTML = " Score = Computer: " + PointComp + "           You: " + PointPlayer;
+		}
+		
+		sessionStorage.setItem("score1",PointPlayer);
+		sessionStorage.setItem("score2",PointComp);	
+		
+		
+		
+	return false;
+	}
+	
+	
+	function nextRound() {
+		
+		
+		if ( PointComp == 5 ) {
+			location = "loser.html"
+		}
+		else if ( PointPlayer == 5 ) {
+			location = "winner.html"
+		}
+		else {
+			location = "RPSstart.html"
+		}
+		return false;
+		
+	}
+	
+
+	
+	
+
+</script>
+
+
+<body>
+    
+<div id="container1">
+<h1> Rock, Paper, Scissors! </h1>
+</div>
+
+<div id="container2">
+<h2> Your Move: </h2>
+<div id= "pic"> </div>
+<h2 class="under"> VS. </h2>
+<div id= "picc"> </div> 
+<h2> Computer's Move </h2>
+ 
+ </div>
+ 
+ 
+ <h2 id="container3"> </h2>
+ 
+  <div id="container4">
+ <form name="player" method="post" onSubmit="return nextRound()">
+ <input type="submit" id="button" value="NEXT ROUND">
+ </div>
+  
+ 
+ <script>
+ photos();
+</script>
+ 
+
+</body>
+
+
+</html>
