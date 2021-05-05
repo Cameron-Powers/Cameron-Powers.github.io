@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "479586198759",
+    "project_id": "neighbourhood-a8d5a",
+    "storage_bucket": "neighbourhood-a8d5a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:479586198759:android:d886debc26e31828fb6e42",
+        "android_client_info": {
+          "package_name": "com.cameron.neighbourhood"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "479586198759-5cj76iets8rla4of8dvlvifbehqt1tp9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.cameron.neighbourhood",
+            "certificate_hash": "30fb3b2cbcd03a645a5446c408f67aa842622678"
+          }
+        },
+        {
+          "client_id": "479586198759-4jmr9kiqtubhbsl9j05q55b7mdkk429n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQMikcIxnoRSNOsOoMMgtQTOItUIpic4w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "479586198759-4jmr9kiqtubhbsl9j05q55b7mdkk429n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
